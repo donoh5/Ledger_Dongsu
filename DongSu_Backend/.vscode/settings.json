@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/13ead2a1-9167-4933-ab24-563e1fb273bb/AppServices/subscriptions/13ead2a1-9167-4933-ab24-563e1fb273bb/resourceGroups/dongsu-backend-rg/providers/Microsoft.Web/sites/dongsu-backend",
+    "appService.deploySubpath": "."
+}
