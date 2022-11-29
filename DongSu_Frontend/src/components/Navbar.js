@@ -12,16 +12,16 @@ function Navbar() {
     const [chart, setChart] = React.useState(false);
     const [add, setAdd] = React.useState(false);
 
-    function handleMenu(name){
-        if(name === 'home'){
+    function handleMenu(name) {
+        if (name === 'home') {
             setHome(true);
             setChart(false);
             setAdd(false);
-        }else if(name === 'chart'){
+        } else if (name === 'chart') {
             setHome(false);
             setChart(true);
             setAdd(false);
-        }else if(name === 'add'){
+        } else if (name === 'add') {
             setHome(false);
             setChart(false);
             setAdd(true);
@@ -29,7 +29,7 @@ function Navbar() {
     }
 
     const designNavMenu = 'hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium';
-    
+
     return (
         <Router>
             <div>
@@ -42,16 +42,16 @@ function Navbar() {
                                 </a>
                                 <div class="hidden md:block">
                                     <div class="ml-10 flex items-baseline space-x-4">
-                                        <Link onClick={() => handleMenu('home')} 
-                                        class={`${home ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/">
+                                        <Link onClick={() => handleMenu('home')}
+                                            class={`${home ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/">
                                             Home
                                         </Link>
-                                        <Link onClick={() => handleMenu('chart')} 
-                                        class={`${chart ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/Chart">
+                                        <Link onClick={() => handleMenu('chart')}
+                                            class={`${chart ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/Chart">
                                             Chart
                                         </Link>
-                                        <Link onClick={() => handleMenu('add')} 
-                                        class={`${add ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/AddTransaction">
+                                        <Link onClick={() => handleMenu('add')}
+                                            class={`${add ? 'text-gray-800 font-bold' : 'text-gray-300'} ${designNavMenu}`} to="/AddTransaction">
                                             Add New!
                                         </Link>
                                     </div>
@@ -94,6 +94,8 @@ function Navbar() {
                             element={<Chart />} />
                         <Route path="/AddTransaction"
                             element={<AddTransaction />} />
+                        <Route path="*"
+                            element={<Home />} />
                     </Routes>
                 </div>
             </div>
