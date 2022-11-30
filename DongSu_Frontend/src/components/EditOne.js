@@ -88,8 +88,8 @@ function EditOne(props) {
                             </div>
                             <div class="flex flex-col mb-2 items-center">
                                 <div>
-                                    Type: <Dropdown text={transaction.type} setText={setTransaction} transaction={transaction} name="type" content={type} />&nbsp;&nbsp;
-                                    <input onChange={handleChange} value={transaction.amount} name="amount" type="text" id="create-account-first-name" class=" py-2 px-4 flex-1 appearance-none border rounded-lg border-transparent border-gray-300 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent w-14 md:w-auto" placeholder="0.00" /> $
+                                    Type: <Dropdown text={transaction.type} setText={setTransaction} transaction={transaction} name="type" content={type} />&nbsp;
+                                    $&nbsp;<input onChange={handleChange} value={transaction.amount} name="amount" type="text" id="create-account-first-name" class=" py-2 px-4 flex-1 appearance-none border rounded-lg border-transparent border-gray-300 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent w-14 md:w-auto" placeholder="0.00" />
                                 </div>
                             </div>
                             <div class="flex flex-col mb-2 items-center">

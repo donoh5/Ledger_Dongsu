@@ -38,19 +38,19 @@ function TotalAmount(props) {
                 </div>
                 <div class="flex flex-col justify-start">
                     <p class="text-gray-700 dark:text-gray-100 text-4xl text-left font-bold my-4">
-                        {totalAmount.total}
                         <span class="text-sm">
                             &nbsp;$
                         </span>
+                        {totalAmount.total}
                     </p>
                     <div class="flex items-center text-sm">
                         <span>
-                            Total Income {totalAmount.income}$
+                            Total Income ${totalAmount.income}
                         </span>
                     </div>
                     <div class="flex items-center text-sm">
                         <span>
-                            Total Expense {totalAmount.expense}$
+                            Total Expense ${totalAmount.expense}
                         </span>
                     </div>
                     <div class="flex items-center text-green-500 text-sm pt-4">
