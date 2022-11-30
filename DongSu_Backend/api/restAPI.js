@@ -30,9 +30,9 @@ router.get('/Chart/:period',
                         if (res.day == i) {
                             totalAmountLoop++;
                             if (res.type === 'Expense') {
-                                totalLoop -= res.amount;
+                                totalLoop -= parseFloat(res.amount);
                             } else {
-                                totalLoop += res.amount;
+                                totalLoop += parseFloat(res.amount);
                             }
                         }
                     });
