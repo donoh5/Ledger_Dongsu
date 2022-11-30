@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Ledger_Dongsu/static/css/main.78eab380.css",
-    "main.js": "/Ledger_Dongsu/static/js/main.de60e628.js",
+    "main.js": "/Ledger_Dongsu/static/js/main.da7ddae8.js",
     "static/js/787.1ed0c42c.chunk.js": "/Ledger_Dongsu/static/js/787.1ed0c42c.chunk.js",
     "static/media/logo.svg": "/Ledger_Dongsu/static/media/logo.beeeac8a97e435a58f7fba3ebbf36ab5.svg",
     "index.html": "/Ledger_Dongsu/index.html",
     "main.78eab380.css.map": "/Ledger_Dongsu/static/css/main.78eab380.css.map",
-    "main.de60e628.js.map": "/Ledger_Dongsu/static/js/main.de60e628.js.map",
+    "main.da7ddae8.js.map": "/Ledger_Dongsu/static/js/main.da7ddae8.js.map",
     "787.1ed0c42c.chunk.js.map": "/Ledger_Dongsu/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78eab380.css",
-    "static/js/main.de60e628.js"
+    "static/js/main.da7ddae8.js"
   ]
 }
