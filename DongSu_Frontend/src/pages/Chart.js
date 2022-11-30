@@ -84,13 +84,13 @@ function Chart() {
     return (
         <>
             <div class="container my-8 mx-auto px-4 sm:px-8 max-w-3xl dark:text-white">
-                <div class="py-8">
+                <div class="md:py-8">
                     <div class="flex flex-row mb-1 sm:mb-0 justify-between w-full">
                         <div>
                             <Dropdown text={period.year} setText={setPeriod} transaction={period} name="year" content={year} />&nbsp;
                             <Dropdown text={period.month} setText={setPeriod} transaction={period} name="month" content={month} />
                         </div>
-                        <div class="text-end">
+                        <div class="text-end hidden md:inline-flex">
                             <form class="flex flex-col md:flex-row w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
                                 <div class=" relative ">
                                     <input onChange={handleSearch} type="text" id="&quot;form-subscribe-Filter" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent" placeholder="TYPE" />

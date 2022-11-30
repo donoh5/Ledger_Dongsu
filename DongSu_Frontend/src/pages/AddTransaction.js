@@ -96,9 +96,9 @@ function AddTransaction() {
     const [isMultiple, setIsMultiple] = useState(false);
 
     return (
-        <div class="container my-20 mx-auto px-4 sm:px-8 max-w-3xl">
-            <div class="flex flex-col max-w-full px-4 py-8 bg-white rounded-lg shadow-xl sm:px-6 md:px-8 lg:px-10">
-                <div class="flex items-center mb-4">
+        <div class="container my-10 md:my-20 mx-auto px-4 max-w-3xl">
+            <div class="flex flex-col max-w-full px-4 py-8 bg-white rounded-lg border-2 shadow-xl sm:px-6 md:px-8 lg:px-10">
+                <div class="items-center mb-4 hidden md:flex">
                     <input id="default-checkbox" type="checkbox" onChange={() => setIsMultiple(!isMultiple)} value={isMultiple} class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                     <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Excel Import</label>
                 </div>

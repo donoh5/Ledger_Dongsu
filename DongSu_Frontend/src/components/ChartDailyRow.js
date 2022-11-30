@@ -7,7 +7,7 @@ function ChartDailyRow(props) {
     const [edit, setEdit] = useState(false);
 
     const handleDoubleClick = event => {
-        if (event.detail == 2) {
+        if (event.detail == 2 || (window.innerWidth <= 900 && event.detail == 1)) {
             setEdit(true);
         }
     }
